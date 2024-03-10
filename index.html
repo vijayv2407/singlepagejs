@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V! - eCommerce</title>
+  <link rel="shortcut icon" href="./image/LOGO/V!-logos_white.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+    integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+    integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "vbsfvrLLiDrjVonTG",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <header>
+    <!-- Flex navbar -->
+    <div class="backImage">
+      <div class="container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+          <div class="container z-1 position-absolute  top-0 start-0 end-0 mt-4">
+            <a class="navbar-brand" href="#HEROSECTOIN"><img src="./image/LOGO/V!-logos_white.png" style="width: 120px;"
+                alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav ">
+                <a class="nav-link me-4 text-light" aria-current="page" href="#PRODUCTS">PRODUCTS</a>
+                <a class="nav-link me-4 text-light" href="#BRANDS">BRANDS</a>
+                <a class="nav-link me-4 text-light" href="#WHYTRIABLO">WHY TRIABLO</a>
+                <a class="nav-link me-4 text-light" href="#TEAM">TEAM</a>
+                <a class="nav-link me-4 text-light" href="#REVIEWS">REVIEWS</a>
+                <a class="nav-link me-4 text-light" href="#ABOUTUS">ABOUT US</a>
+                <a class="nav-link me-4 text-light" href="#NEWS">NEWS</a>
+                <a class="nav-link me-4 text-light" href="#CONTACTS">CONTACTS</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- HEROSECTION -->
+  <section class="" id="HEROSECTOIN">
+    <div class="herosection position-absolute  top-0 start-0 w-100" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+      <h2 class="display-3 fw-normal text-center text-light" style="margin-top: 300px;">THE STYLE FOR TODAY</h2>
+      <p class="text-center text-light">Lorem ipsum dolor sit amet, consectetur adipiscing. Vel pellentesque consequat
+      </p>
+      <div class="herosectionbtn  d-flex flex-column align-items-center mt-5">
+        <button class="p-2 px-5 border-0 text-light" style="background-color: #9b59b6; border-radius: 20px;">CHECK
+          IT</button>
+        </div>
+        
+
+      <div class="timer my-3">
+        <h2 class="text-light p-3 text-end ">20% OFF ON WINTER WARMERS</h2>
+        <div class="maindivTimer  d-flex justify-content-end text-light fs-5 " id="date">
+
+          <div class="subdivTimer1 me-5 text-center">
+            <h6 class="px-2">DAYS</h6>
+            <span id="days">00</span>
+          </div>
+          <div class="subdivTimer2 me-5 text-center">
+            <h6 class="px-1">HOURS</h6>
+            <span id="hours">00</span>
+          </div>
+          <div class="subdivTimer3 me-5 text-center">
+            <h6 class="px-1">MINUTES</h6>
+            <span id="minutes">00</span>
+          </div>
+          <div class="subdivTimer4 me-5 text-center">
+            <h6 class="px-1">SECONDS</h6>
+            <span id="seconds">00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PRODUCTS -->
+  <section id="PRODUCTS">
+    <div class="products my-5" data-aos="fade-up">
+      <h2 class="display-5 fw-normal text-center" style="margin-top: 100px;">WE MAKE YOU AWESOME</h2>
+    </div>
+    <section class="container">
+    
+      <!-- PRODUCTS ICON -->
+      <div class="productsIcon d-flex justify-content-between">
+        <div class="ListAndCartIcon d-flex " data-aos="zoom-out-left">
+          <i class="bi bi-list-ul fs-1 pe-3"></i>
+          <div class="iconCart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-cart3  fs-2 border-start  ps-3 totalQuantity"></i>
+          </div>
+        </div>
+        
+        <div class="LeftAndRight" data-aos="zoom-out-right">
+          <i class="bi bi-chevron-left fs-1 pe-3"></i>
+          <i class="bi bi-chevron-right fs-1"></i>
+        </div>
+      </div>
+      <section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalLabel">Cart</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body col">
+                  <div class="listCart">
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCTS CARDS -->
+
+        <div class="listProduct col">
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- BRANDICONS -->
+      <section id="BRANDS">
+        <div class="brandIcon my-5 container">
+          <div class="maindivBrandIcon d-flex  justify-content-around align-items-center flex-wrap my-5">
+            <div class="subdivBrandIcon"><img src="./image/brand1.png" alt="" class="w-75"></div>
+            <div class="subdivBrandIcon"><img src="./image/brand2.png" alt="" class="w-75"></div>
+            <div class="subdivBrandIcon"><img src="./image/brand3.png" alt="" class="w-75"></div>
+            <div class="subdivBrandIcon"><img src="./image/brand4.png" alt="" class="w-75"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Currency Convertor -->
+
+      <section>
+        <div class="container">
+          <h1 class="text-center py-5 fw-normal">Currency Convertor</h1>
+          <div class="box d-flex justify-content-center gap-lg-4">
+            <div class="left-box">
+              <select name="currency" class="currency w-100 my-3 btn btn-outline-dark"
+                style="border: 1px solid #9b59b6!important;background-color: transparent; color: black;">
+
+              </select>
+              <input type="number" name="" id="input" class="w-100 btn btn-outline-dark"
+                style=" background-color: transparent; color: black;border: 1px solid #9b59b6!important;">
+            </div>
+            <div class="right-box">
+              <select name="currency" class="currency w-100 my-3 btn btn-outline-dark"
+                style="border: 1px solid #9b59b6!important; color: black; background-color: transparent;"></select>
+              <input type="number" name="" id="result" class="w-100 btn btn-outline-dark"
+                style=" background-color: transparent; color: black;border: 1px solid #9b59b6!important;">
+            </div>
+          </div>
+          <div class="btn d-flex justify-content-center my-3 border-0">
+            <button class="btn btn-outline-dark" id="btnCC"
+              style="border: 1px solid #9b59b6!important; color:black; background: transparent ;">Convert Now</button>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- WHY TRIABLO -->
+
+      <section class="whyTriablo container-fluid pt-5" id="WHYTRIABLO" style="background-color: #eeeced;">
+        <div class="heading py-3">
+          <h2 class="display-5 fw-normal text-center" style="margin-top: 0px;">WHY PEOPLE CHOOSE TRIABLO?</h2>
+        </div>
+        <div class="maindivtriablo d-flex justify-content-center container mx-auto ">
+          <div class="subdivtriablo1 my-auto">
+            <div class="card mb-3 border-0" style="max-width: 540px;background-color: #eeeced;" data-aos="fade-right">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-end fs-2 fw-normal py-4">PREORDER <br>SYSTEM</h5>
+                    <p class="card-text text-end text-muted">Donec fermentum vulputate nisl non sollicitudin.Vivamus
+                      sagittis fermentum dolor, porta adipiscing magna.</p>
+                  </div>
+                </div>
+                <div class="col-md-4" style="margin-top: 80px;">
+                  <i class="bi bi-book display-1 text-center mx-5"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 border-0" style="max-width: 540px;background-color: #eeeced;" data-aos="fade-right">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-end fs-2 fw-normal py-4">RETINA READY</h5>
+                    <p class="card-text text-end text-muted">Donec fermentum vulputate nisl non sollicitudin.Vivamus
+                      sagittis fermentum dolor, porta adipiscing magna.</p>
+                  </div>
+                </div>
+                <div class="col-md-4" style="margin-top: 80px;">
+                  <i class="bi bi-gem display-1 text-center mx-5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subdivtriablo2 mt-5">
+            <div class=" owl-carousel owl-theme">
+              <img src="./image/Centerimgone.jpg" alt="" width="100% ">
+              <img src="./image/Centerimgthree.jpg" alt="" width="100%">
+              <img src="./image/Centerimgtwo.jpg" alt="" width="100%">
+            </div>
+          </div>
+          <div class="subdivtriablo3 my-auto">
+            <div class="card mb-3 border-0" style="max-width: 540px;background-color: #eeeced;" data-aos="fade-left">
+              <div class="row g-0">
+                <div class="col-md-4" style="margin-top: 80px;">
+                  <i class="bi bi-phone display-1 text-center mx-5"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-start fs-2 fw-normal py-4">RESPONSIVE LAYOUT</h5>
+                    <p class="card-text text-start text-muted">Donec fermentum vulputate nisl non sollicitudin.Vivamus
+                      sagittis fermentum dolor, porta adipiscing magna.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 border-0" style="max-width: 540px;background-color: #eeeced;" data-aos="fade-left">
+              <div class="row g-0">
+                <div class="col-md-4" style="margin-top: 80px;">
+                  <i class="bi bi-stack display-1 text-center mx-5"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-start fs-2 fw-normal py-4">MATERIAL DESIGN</h5>
+                    <p class="card-text text-start text-muted">Donec fermentum vulputate nisl non sollicitudin.Vivamus
+                      sagittis fermentum dolor, porta adipiscing magna.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR TEAM -->
+      <section id="TEAM">
+        <div class="ourteam my-5">
+          <div class="headingOurteam my-1">
+            <h2 class="display-5 fw-normal text-center ">OUR TEAM</h2>
+            <p class="text-center w-75 mx-auto py-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+              Tempora esse, inventore incidunt consequatur magni
+              animi autem veniam neque laudantium quod, nihil illo unde nemo odio sint, itaque quidem ea suscipit.</p>
+          </div>
+          <div class="container d-flex justify-content-center flex-wrap">
+            <div class="card-group py-5">
+              <div class="card border-0 px-4" data-aos="fade-up-right">
+                <img src="./image/ourteamone.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-muted">Tyler Tong</h5>
+                  <p class="card-text text-center text-muted">Manager</p>
+                </div>
+              </div>
+              <div class="card border-0 px-4" data-aos="flip-up">
+                <img src="./image/ourteamtwo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-muted">Joseph Abraaham</h5>
+                  <p class="card-text text-center text-muted">Photographer</p>
+                </div>
+              </div>
+              <div class="card border-0 px-4" data-aos="fade-up">
+                <img src="./image/ourteamthree.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-muted">Aaron Beet</h5>
+                  <p class="card-text text-center text-muted">Photographer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team" id="REVIEWS">
+            <div class="maindivourteam d-flex align-items-center justify-content-around  py-3">
+              <div class="subdivourteam1">
+                <p class="fs-5">Excited about what's waiting for you? Check out our new summer collection.</p>
+              </div>
+              <div class="subdivourteam2">
+                <button class="p-2 px-4 border-0 rounded-pill text-light" style="background-color: #9b59b6;">CHECK IT
+                  OUT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THINK ABOUT IT  -->
+      <section class="pb-5" id="NEWS" style="background-color: #eeeced;">
+        <div class="reviews">
+          <div class="card text-bg-dark border-0 border-radius-none">
+            <div class="card-img-overlay">
+              <div class="reviewImg d-flex justify-content-center pt-5">
+                <img src="./image/reviewImg1.png" alt="" class="py-3" style="width: 100px;">
+              </div>
+              <h5 class="card-title text-center">John McKenzey, California</h5>
+              <p class="card-text text-center w-50 mx-auto py-4">Thank you so much. I really didn’t expect such a quick
+                and
+                positive response! Often when
+                something goes wrong with a product it seems the consumer is the one that gets the “raw end of the deal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="headingOurteam container my-5">
+          <h2 class="display-5 fw-normal text-center ">THINK ABOUT IT </h2>
+          <p class="text-center w-75 mx-auto py-3 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed
+            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+            veniam,
+            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+            vel
+            eum iriure dolor in hendrerit in vulputate velit.</p>
+        </div>
+    </div>
+
+
+    <div class="news">
+      <div class="reviewcard container mx-auto">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="card shadow-sm border-0">
+              <img src="./image/reviewCardImg1.png" class="card-img-top" alt="...">
+              <div class="card-body px-4 pb-4">
+                <p class="caed-text text-muted">8 September 2014</p>
+                <h5 class="card-title py-2 w-75">John Doe Nabs Lead in Adaptation of 'Paper Towns'</h5>
+                <p class="card-text text-muted ">There are plenty of reasons why we are excited for next spring, but
+                  digesting the
+                  trends from the runway of New York Fashion Week has us positively giddy. Check out all of the great
+                  things to look forward to next season. A few of them you might be able to try out right now.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card shadow-sm border-0">
+              <img src="./image/reviewCardImg2.png" class="card-img-top" alt="...">
+              <div class="card-body px-4 pb-4">
+                <p class="caed-text text-muted">8 September 2014</p>
+                <h5 class="card-title py-2 ">How to Nail Swedish, French, and American Style All at Oncev</h5>
+                <p class="card-text text-muted ">There are plenty of reasons why we are excited for next spring, but
+                  digesting the
+                  trends from the runway of New York Fashion Week has us positively giddy. Check out all of the great
+                  things to look forward to next season. A few of them you might be able to try out right now.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="card shadow-sm border-0">
+              <img src="./image/reviewCardImg3.png" class="card-img-top" alt="...">
+              <div class="card-body px-4 pb-4">
+                <p class="caed-text text-muted">8 September 2014</p>
+                <h5 class="card-title py-2 w-75">High School's Super-Strict Dress Code</h5>
+                <p class="card-text text-muted ">There are plenty of reasons why we are excited for next spring, but
+                  digesting the
+                  trends from the runway of New York Fashion Week has us positively giddy. Check out all of the great
+                  things to look forward to next season. A few of them you might be able to try out right now.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="card shadow-sm border-0">
+              <img src="./image/reviewCardImg4.png" class="card-img-top" alt="...">
+              <div class="card-body px-4 pb-4">
+                <p class="caed-text text-muted">8 September 2014</p>
+                <h5 class="card-title py-2 w-75">23 SPRING TRENDS FROM THE RUNWAYS</h5>
+                <p class="card-text text-muted ">There are plenty of reasons why we are excited for next spring, but
+                  digesting the
+                  trends from the runway of New York Fashion Week has us positively giddy. Check out all of the great
+                  things to look forward to next season. A few of them you might be able to try out right now.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card shadow-sm border-0">
+              <img src="./image/reviewCardImg5.png" class="card-img-top" alt="...">
+              <div class="card-body px-4 pb-4">
+                <p class="caed-text text-muted">8 September 2014</p>
+                <h5 class="card-title py-2 w-75">THE BEST OF LONDON STREET STYLE</h5>
+                <p class="card-text text-muted ">There are plenty of reasons why we are excited for next spring, but
+                  digesting the
+                  trends from the runway of New York Fashion Week has us positively giddy. Check out all of the great
+                  things to look forward to next season. A few of them you might be able to try out right now.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="card shadow-sm border-0">
+              <img src="./image/reviewCardImg6.png" class="card-img-top" alt="...">
+              <div class="card-body px-4 pb-4">
+                <p class="caed-text text-muted">8 September 2014</p>
+                <h5 class="card-title py-2 w-75">AllSaints Reinvents the Fashion Show Formula</h5>
+                <p class="card-text text-muted">There are plenty of reasons why we are excited for next spring, but
+                  digesting the
+                  trends from the runway of New York Fashion Week has us positively giddy. Check out all of the great
+                  things to look forward to next season. A few of them you might be able to try out right now.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="video col mt-4" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <video src="./image/production_id_5198919 (2160p).mp4" autoplay loop muted class="" width="100%"
+        height="auto"></video>
+    </div>
+  </section>
+
+  <section id="ABOUTUS">
+    <div class="icons container mx-auto py-5 my-4 text-center text-muted">
+      <div class="maindivIcons d-flex justify-content-evenly align-items-center flex-wrap">
+        <div class="subdivIcons1 col">
+          <i class="bi bi-send display-4 py-3"></i>
+          <h3 id="counterH">24h</h3>
+          <p>AVARAGE DELIVERY TIME</p>
+        </div>
+        <div class="subdivIcons2 col">
+          <i class="bi bi-bag display-4 py-3"></i>
+          <h3 id="counterPS">2443</h3>
+          <p>PRODUCTS SOLD</p>
+        </div>
+        <div class="subdivIcons3 col">
+          <i class="bi bi-hand-thumbs-up display-4 py-3"></i>
+          <h3 id="counterHC">98%</h3>
+          <p>HAPPY CLIENTS</p>
+        </div>
+        <div class="subdivIcons4 col">
+          <i class="bi bi-award display-4 py-3"></i>
+          <h3 id="counterYOF">20</h3>
+          <p>YEARS OF EXPERIENCE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="CONTACTS">
+    <!-- form -->
+    <div class="Contactus container py-5" data-aos="fade-down">
+      <div class="headingContactus text-center py-5">
+        <h2 class="display-5 fw-normal text-center">CONTACT OR FIND US ON <a href="#" style="color: #9b59b6;">THE
+            MAP</a>
+        </h2>
+      </div>
+      <div class="cont">
+        <div class="ContactForm d-flex  justify-content-evenly">
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15554.734927875665!2d80.1093461!3d12.928037400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1708173366658!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="froms">
+            <div class="namediv col py-1">
+              <label for="name" class="formLabel py-1">Name</label><br>
+              <input type="text" id="fullName" name="name" required class="border-0 border-bottom p-1 pe-5"
+                style=" outline: none; width: 450px;  height: 45px;">
+            </div>
+            <div class="emaildiv col py-1">
+              <label for="name" class="formLabel py-1">E-Mail</label><br>
+              <input type="email" id="emailAddress" name="name" required class="border-0 border-bottom p-1 pe-5"
+                style="outline: none ;width: 450px;height: 45px;">
+            </div>
+            <div class="numberdiv col py-1">
+              <label for="name" class="formLabel py-1">Phone Number</label><br>
+              <input type="number" id="phoneNumber" name="name" required class="border-0 border-bottom p-1 pe-5"
+                style="outline: none  ;width: 450px; height: 45px;">
+            </div>
+            <div class="messageBox col">
+              <label for="message" class="formLabel py-1">Message</label><br>
+              <textarea name="message" id="message" cols="70" rows="6" required class="border-0 border-bottom p-1"
+                style="outline: none; width: 450px;"></textarea>
+
+            </div>
+            <div class="submitbtn py-4">
+              <button type="submit" id="btn" class="btn btn-outline-dark"
+                style=" color: #9b59b6; border: 1px solid #9b59b6!important;">Send <i class="bi bi-send"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div data-aos="fade-down">
+        <div class="formIcon d-flex justify-content-center align-items-center my-3">
+          <div class="icon1"><i class="bi bi-instagram ps-4 my-4 fs-4"></i></div>
+          <div class="icon2"><i class="bi bi-twitter-x ps-4 my-4 fs-4"></i></div>
+          <div class="icon3"><i class="bi bi-facebook ps-4 my-4 fs-4"></i></div>
+          <div class="icon4"><i class="bi bi-whatsapp ps-4 my-4 fs-4"></i></div>
+          <div class="icon5"><i class="bi bi-youtube ps-4 my-4 fs-4"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background-color: #383838;">
+    <div class="maindivfooter container d-flex justify-content-around align-items-center text-light py-3">
+      <div class="subdivfooter1 text-center">
+        <span><b>E-mail:</b> clothes_shop@v.com</span><br>
+        <span><b>Address:</b>New York, Saint Nicholas Avenue 13/1</span><br>
+        <span><b>Phone Number</b>+1 0123-4567-8900</span>
+      </div>
+      <div class="subdivfooter2" data-aos="fade-down">
+        <img src="./image/LOGO/V!-logos_white.png" alt="" width="130px" height="auto">
+      </div>
+      <div class="subdivfooter3">
+        <p>&copy; All rights reserved | Designed by V</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      dots: false,
+      animateOut: 'slideOutDown',
+      animateIn: 'flipInX',
+      margin: 30,
+      stagePadding: 30,
+      smartSpeed: 450,
+      nav: true,
+      autoplay: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      // autoplayHoverPause:true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    // Detect if a link's href goes to the current page
+    function getSamePageAnchor(link) {
+      if (
+        link.protocol !== window.location.protocol ||
+        link.host !== window.location.host ||
+        link.pathname !== window.location.pathname ||
+        link.search !== window.location.search
+      ) {
+        return false;
+      }
+
+      return link.hash;
+    }
+
+    // Scroll to a given hash, preventing the event given if there is one
+    function scrollToHash(hash, e) {
+      const elem = hash ? document.querySelector(hash) : false;
+      if (elem) {
+        if (e) e.preventDefault();
+        gsap.to(window, { scrollTo: elem });
+      }
+    }
+
+    // If a link's href is within the current page, scroll to it instead
+    document.querySelectorAll('a[href]').forEach(a => {
+      a.addEventListener('click', e => {
+        scrollToHash(getSamePageAnchor(a), e);
+      });
+    });
+
+    // Scroll to the element in the URL's hash on load
+    scrollToHash(window.location.hash);
+  </script>
+  <script>
+    var roundLogEl = document.querySelector('#counterH');
+    var roundLogEl2 = document.querySelector('#counterPS');
+    var roundLogEl3 = document.querySelector('#counterHC');
+    var roundLogEl4 = document.querySelector('#counterYOF');
+
+    let about = document.getElementById("ABOUTUS").addEventListener("mouseover", () => {
+      anime({
+        targets: roundLogEl,
+        innerHTML: [0, 24 + "h"],
+        easing: 'linear',
+        round: 10 // Will round the animated value to 1 decimal
+      });
+
+      anime({
+        targets: roundLogEl2,
+        innerHTML: [0, 2443],
+        easing: 'linear',
+        round: 10 // Will round the animated value to 1 decimal
+      });
+
+      anime({
+        targets: roundLogEl3,
+        innerHTML: [0, 98 + "%"],
+        easing: 'linear',
+        round: 10 // Will round the animated value to 1 decimal
+      });
+
+      anime({
+        targets: roundLogEl4,
+        innerHTML: [0, 20],
+        easing: 'linear',
+        round: 10, // Will round the animated value to 1 decimal
+      });
+
+    })
+
+  </script>
+</body>
+
+</html>

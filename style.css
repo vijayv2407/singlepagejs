@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.owl-nav {
+  display: none;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(./image/HerosceBackImg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.backImage {
+  width: 100%;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.45);
+}
+.reviews {
+  width: 100%;
+  height: 50vh;
+  background: url(./image/reviews-bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* hover */
+
+.cardsimg img {
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+.hoverIcon {
+  margin-top: -50px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+.bi-search,
+.bi-plus {
+  color: black;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.hoverIcon:hover {
+  opacity: 1;
+}
+.cardsimg img:hover {
+  opacity: 0.5;
+}
+.bi-search:hover,
+.bi-plus:hover {
+  color: white;
+  opacity: 1;
+}
+/* Js */
+
+.red {
+  color: #ff0808 !important;
+  padding-right: 170px;
+  font-weight: 700;
+}
+
+.subdivtriablo2 {
+  width: 50%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.listProduct {
+  padding: 15px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 15px 0;
+}
+
+.listProduct img {
+  width: 240px;
+}
+
+.listProduct h2 {
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: center;
+}
+.listProduct .price {
+  font-size: 20px;
+}
+.listProduct .priceAndButton {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.listProduct .item {
+  position: relative;
+}
+
+.listCart{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.listCart .content{
+    font-size: 10px!important;
+    text-align: center;
+    padding: 5px 0;
+}
+.listCart img{
+    width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .ContactForm {
+    display: block;
+  }
+  .sideForm2,
+  .team,
+  .reviews p,
+  .maps,
+  .maindivBrandIcon {
+    display: none !important;
+  }
+  .sideForm1 {
+    margin: 20px 0;
+  }
+  .Contactus {
+    margin-top: -100px;
+  }
+  .timer h2 {
+    font-size: 25px;
+  }
+  header {
+    width: 100%;
+    height: 85vh;
+    background: url(./image/HerosceBackImg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .reviews {
+    padding-top: 60px;
+  }
+  .maindivIcons p {
+    font-size: 8px;
+  }
+  .suddivfooter1 span {
+    font-size: 9px;
+  }
+  .froms input,
+  textarea {
+    width: 350px !important;
+    margin-left: 5px;
+  }
+  .froms label {
+    margin-left: 5px;
+  }
+  .submitbtn {
+    margin-left: 150px !important;
+  }
+  .formIcon {
+    margin-left: -25px;
+  }
+  .subdivfooter1 b,
+  .subdivfooter1 span {
+    font-size: 10px;
+  }
+  .subdivfooter3 p {
+    font-size: 15px;
+  }
+  .maindivTimer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .maindivTimer .me-5 {
+    margin-right: 1rem !important;
+  }
+}
